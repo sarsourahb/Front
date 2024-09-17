@@ -1,0 +1,136 @@
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    height: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    
+}
+
+button img {
+    height: 24px;
+}
+
+main section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    margin-bottom: 1em;
+}
+
+button {
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Algemene stijlen voor main content */
+main section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    margin-bottom: 1em;
+}
+
+/* Filter knoppen */
+[aria-label="Filter knoppen"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+[aria-label="Filter knoppen"] button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+[aria-label="Filter knoppen"] img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Productlijst */
+[aria-label="Productlijst"] ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+[aria-label="Productlijst"] li {
+    list-style-type: none;
+}
+
+[aria-label="Productlijst"] article {
+    background-color: #fff;
+    
+    text-align: center;
+}
+
+[aria-label="Productlijst"] img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+[aria-label="Productlijst"] h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+[aria-label="Productlijst"] p {
+    margin: 5px 0;
+}
+
+/* Media query voor responsiviteit */
+@media (max-width: 768px) {
+    [aria-label="Productlijst"] ul {
+        grid-template-columns: 1fr;
+    }
+}
